@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+        <script type="text/javascript" src="three.min.js"></script>
+
+        <script type="text/javascript" src="OrbitControls.js"></script>
+
+        <script type="text/javascript" src="cane.js"></script>
+
+        <script type="text/javascript" src="SCRIPT.js"></script>
+
+        <title>CANE</title>
+
+</head>
+
+<body>
+
+        <div class="container">
+
+                <div class="render">
+
+                        <div id="scene3d">
+
+                        </div>
+                </div>           
+
+        </div>     
+
+        <div class="data">
+
+                <p><span class="reading">ang: <span id="ang"></p>
+                <p><span class="reading">dist: <span id="dist"></p>                                                                
+
+                <div>
+                        <input type="range" name="rangeInput" min="0" max="4000"
+                                onchange="updatespeed(this.value);">
+                        <input type="text" id="speedstep" value="2000">
+                </div>
+
+        </div>      
+
+</body>
+
+</html>
